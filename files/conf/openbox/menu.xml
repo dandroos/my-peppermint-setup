@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<menu id="root-menu-49839" label="Chrome Apps">
+			<item label="Chrome">
+				<action name="Execute">
+					<execute>google-chrome-stable</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Email">
+				<action name="Execute">
+					<execute>google-chrome --app=https://www.gmail.com</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Google Spreadsheets">
+				<action name="Execute">
+					<execute>google-chrome --app=https://docs.google.com/spreadsheets/</execute>
+				</action>
+			</item>
+			<item label="Google Documents">
+				<action name="Execute">
+					<execute>google-chrome --app=https://docs.google.com/document/</execute>
+				</action>
+			</item>
+			<item label="Google Slides">
+				<action name="Execute">
+					<execute>google-chrome --app=https://docs.google.com/presentation/</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Pirate Bay">
+				<action name="Execute">
+					<execute>google-chrome --app=https://unblockpirate.org/</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="GitHub">
+				<action name="Execute">
+					<execute>google-chrome --app=http://www.github.com</execute>
+				</action>
+			</item>
+			<item label="Stack Overflow">
+				<action name="Execute">
+					<execute>google-chrome --app=http://www.stackoverflow.com</execute>
+				</action>
+			</item>
+			<separator/>
+			<menu id="root-menu-49839-512011" label="Cloud Services">
+				<item label="MongoDB Atlas">
+					<action name="Execute">
+						<execute>google-chrome --app=https://cloud.mongodb.com/user?nds=true#/atlas//</execute>
+					</action>
+				</item>
+				<item label="Netlify">
+					<action name="Execute">
+						<execute>google-chrome --app=https://app.netlify.com/?_ga=2.13480496.649031232.1566372136-1742189714.1566372136</execute>
+					</action>
+				</item>
+				<item label="Heroku">
+					<action name="Execute">
+						<execute>google-chrome --app=https://id.heroku.com/login</execute>
+					</action>
+				</item>
+				<item label="AWS">
+					<action name="Execute">
+						<execute>google-chrome --app=https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&amp;client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&amp;forceMobileApp=0</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-49839-121516" label="Docs">
+				<item label="Bootstrap">
+					<action name="Execute">
+						<execute>google-chrome --app=https://getbootstrap.com/docs/4.3/getting-started/introduction/</execute>
+					</action>
+				</item>
+				<item label="Gatsby">
+					<action name="Execute">
+						<execute>google-chrome --app=http://gatsbyjs.org/docs</execute>
+					</action>
+				</item>
+				<item label="Material">
+					<action name="Execute">
+						<execute>google-chrome --app=https://material.io/develop/web/docs/</execute>
+					</action>
+				</item>
+				<item label="Node.js">
+					<action name="Execute">
+						<execute>google-chrome --app=https://nodejs.org/api/</execute>
+					</action>
+				</item>
+				<item label="React">
+					<action name="Execute">
+						<execute>google-chrome --app=https://reactjs.org</execute>
+					</action>
+				</item>
+				<item label="Font Awesome">
+					<action name="Execute">
+						<execute>google-chrome --app=https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Tint2">
+					<action name="Execute">
+						<execute>google-chrome --app=https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-49839-733128" label="Package Directories">
+				<item label="NPM">
+					<action name="Execute">
+						<execute>google-chrome --app=https://www.npmjs.com/</execute>
+					</action>
+				</item>
+				<item label="Gatsby Plugin Library">
+					<action name="Execute">
+						<execute>google-chrome --app=https://www.gatsbyjs.org/plugins/</execute>
+					</action>
+				</item>
+				<item label="Libraries.io (NPM)">
+					<action name="Execute">
+						<execute>google-chrome --app=https://libraries.io/NPM</execute>
+					</action>
+				</item>
+				<item label="Visual Studio Marketplace">
+					<action name="Execute">
+						<execute>google-chrome --app=https://marketplace.visualstudio.com</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-49839-993325" label="Graphics">
+				<item label="Unsplash">
+					<action name="Execute">
+						<execute>google-chrome --app=https://unsplash.com/</execute>
+					</action>
+				</item>
+				<item label="Pexels">
+					<action name="Execute">
+						<execute>google-chrome --app=https://www.pexels.com/</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-49839-352849" label="Utilities">
+				<item label="Coolors">
+					<action name="Execute">
+						<execute>google-chrome --app=https://coolors.co/app</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="YouTube">
+				<action name="Execute">
+					<execute>google-chrome --app=http://www.youtube.com</execute>
+				</action>
+			</item>
+			<item label="Facebook">
+				<action name="Execute">
+					<execute>google-chrome --app=http://www.facebook.com</execute>
+				</action>
+			</item>
+			<item label="Twitter">
+				<action name="Execute">
+					<execute>google-chrome --app=http://twitter.com</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Classic FM">
+				<action name="Execute">
+					<execute>google-chrome --app=https://www.globalplayer.com/live/classicfm/uk/</execute>
+				</action>
+			</item>
+			<item label="White Noise">
+				<action name="Execute">
+					<execute>google-chrome --app=https://mynoise.net/NoiseMachines/whiteNoiseGenerator.php</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Sabadell">
+				<action name="Execute">
+					<execute>google-chrome --app=https://www.bancsabadell.com/cs/Satellite/SabAtl/</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Visual Studio Code">
+			<action name="Execute">
+				<execute>code</execute>
+			</action>
+		</item>
+		<separator/>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<item label="Inkscape">
+			<action name="Execute">
+				<execute>inkscape</execute>
+			</action>
+		</item>
+		<item label="GIMP">
+			<action name="Execute">
+				<execute>gimp</execute>
+			</action>
+		</item>
+		<item label="Blender">
+			<action name="Execute">
+				<execute>blender</execute>
+			</action>
+		</item>
+		<item label="Openshot">
+			<action name="Execute">
+				<execute>openshot-qt</execute>
+			</action>
+		</item>
+		<menu id="/Debian"/>
+		<separator/>
+		<item label="Transmission">
+			<action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="VLC">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications (All)"/>
+		<separator/>
+		<menu id="root-menu-12485" label="Openbox">
+			<item label="Menu Editor">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Settings">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Restart Desktop">
+				<action name="Restart"/>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Task Manager">
+			<action name="Execute">
+				<execute>xfce4-taskmanager</execute>
+			</action>
+		</item>
+		<item label="Logout">
+			<action name="Execute">
+				<execute>lxsession-logout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
