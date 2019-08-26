@@ -8,7 +8,7 @@ module.exports = () => {
     return new Promise((res, rej) => {
         console.info(`Installing favourite fonts..`)
         shell.mkdir('~/.fonts')
-        const files = fs.readdirSync('./files/fonts')
+        const files = fs.readdirSync(path.join(__dirname, '../files/fonts'))
         files.map((file) => {
             if(shell.exec(`cp ./files/fonts/${file} ~/.fonts`).code !== 0){
                 rej('Sorry there was a problem installing your favourite fonts')
