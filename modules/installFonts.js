@@ -10,7 +10,7 @@ module.exports = () => {
         shell.mkdir('~/.fonts')
         const files = fs.readdirSync('./files/fonts')
         files.map((file) => {
-            if(shell.exec(`cp ./assets/fonts/${file} ~/.fonts`).code !== 0){
+            if(shell.exec(`cp ./files/fonts/${file} ~/.fonts`).code !== 0){
                 rej('Sorry there was a problem installing your favourite fonts')
             }
         })
@@ -19,7 +19,7 @@ module.exports = () => {
         console.info(`Installing Google Fonts (This will take a little while)`)
         if(shell.exec('git clone https://github.com/google/fonts.git ~/temp_google', () => {
             fs.readdirSync(`${home}/temp_google/ofl/`).map((dir) => {
-                fs.readdir(`${home}/temp_google/ofl/${dir}`).map((file) => {
+                fs.readdirSync(`${home}/temp_google/ofl/${dir}`).map((file) => {
                     if (path.extname(file) === '.ttf') {
                         if(shell.exec(`cp ~/temp_google/ofl/${dir}/${file} ~/.fonts`).code !== 0){
                             rej(`Sorry there was a problem installing ${file}`)
