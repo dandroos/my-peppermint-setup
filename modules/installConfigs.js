@@ -16,6 +16,15 @@ module.exports = () => {
                 }
             })
         })
+
+        //xfce4 display dim on battery setting to zero
+        if(shell.exec('xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/brightness-on-battery -s 0').code !== 0){
+            rej('Sorry...there was a problem configuring brightness-on-display in XFCE')
+        }
+        //...and disable display power management
+        if(shell.exec('xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -s false').code !== 0){
+            rej('Sorry...there was a problem configuring dpms-enabled in XFCE')
+        }
         res();
     })
 }

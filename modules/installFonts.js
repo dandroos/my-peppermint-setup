@@ -10,20 +10,26 @@ module.exports = () => {
         shell.mkdir('~/.fonts')
         const files = fs.readdirSync('./files/fonts')
         files.map((file) => {
-            shell.exec(`cp ./assets/fonts/${file} ~/.fonts`)
+            if(shell.exec(`cp ./assets/fonts/${file} ~/.fonts`).code !== 0){
+                rej('Sorry there was a problem installing your favourite fonts')
+            }
         })
         //Google fonts
         console.clear()
         console.info(`Installing Google Fonts (This will take a little while)`)
-        shell.exec('git clone https://github.com/google/fonts.git ~/temp_google', () => {
+        if(shell.exec('git clone https://github.com/google/fonts.git ~/temp_google', () => {
             fs.readdirSync(`${home}/temp_google/ofl/`).map((dir) => {
                 fs.readdir(`${home}/temp_google/ofl/${dir}`).map((file) => {
                     if (path.extname(file) === '.ttf') {
-                        shell.exec(`cp ~/temp_google/ofl/${dir}/${file} ~/.fonts`);
+                        if(shell.exec(`cp ~/temp_google/ofl/${dir}/${file} ~/.fonts`).code !== 0){
+                            rej(`Sorry there was a problem installing ${file}`)
+                        };
                     }
                 })
             })
-            shell.exec('rm -r ~/temp_google', res('Fonts installed'))
-        })
+            shell.exec('rm -r ~/temp_google', res)
+        }).code !== 0){
+            rej('Sorry there was a problem cloning the Google Fonts repository.')
+        }
     })
 }

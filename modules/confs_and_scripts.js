@@ -74,7 +74,7 @@ module.exports = [
 	//MY SCRIPTS
 	{
 		name: 'my scripts',
-		src: ['.files/scripts/connect_screen.py', '.files/scripts/get-current-volume.sh', '.files/scripts/volume-up.sh'],
+		src: ['.files/scripts/*'],
 		dest: '~/bin'
 	}
 ]
