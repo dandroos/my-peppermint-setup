@@ -35,7 +35,7 @@ module.exports = {
             //vscode
             {
                 name: 'vscode',
-                command: `wget -O -nc vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868 && sudo dpkg -i vscode.deb`
+                command: `wget -O vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868 && sudo dpkg -i vscode.deb`
             },
             //inkscape
             {
