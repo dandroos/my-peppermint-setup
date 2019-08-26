@@ -17,7 +17,7 @@ module.exports = () => {
         //Google fonts
         console.clear()
         console.info(`Installing Google Fonts (This will take a little while)`)
-        if(shell.exec('git clone https://github.com/google/fonts.git ~/temp_google', () => {
+        shell.exec('git clone https://github.com/google/fonts.git ~/temp_google', () => {
             fs.readdirSync(`${home}/temp_google/ofl/`).map((dir) => {
                 fs.readdirSync(`${home}/temp_google/ofl/${dir}`).map((file) => {
                     if (path.extname(file) === '.ttf') {
@@ -28,8 +28,6 @@ module.exports = () => {
                 })
             })
             shell.exec('rm -r ~/temp_google', res)
-        }).code !== 0){
-            rej('Sorry there was a problem cloning the Google Fonts repository.')
-        }
+        })
     })
 }
